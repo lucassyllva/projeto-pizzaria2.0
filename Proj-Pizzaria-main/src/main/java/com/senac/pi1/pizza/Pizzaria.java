@@ -18,12 +18,12 @@ public class Pizzaria {
              System.out.println();
             System.out.println("Escolha uma opção:");
             System.out.println("A - Fazer pedido");
-            System.out.println("B - Lista de pizza");//cardapio 
-            System.out.println("C - Cadastrar cliente");
+            System.out.println("B - Lista de pizza");//cardapio...
+            System.out.println("C - Cadastrar cliente");//cadastro pronto
             System.out.println("D - Cadastrar pizza");
             System.out.println("E - Alterar preço");
             System.out.println("F - Controle de pedido");
-            System.out.println("G - Listar clientes");
+            System.out.println("G - Listar clientes");//lista pronta
             System.out.println("X - Sair");
             System.out.println();
             System.out.print("Digite a sua escolha: ");
