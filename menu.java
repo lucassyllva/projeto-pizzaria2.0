@@ -5,7 +5,7 @@ public class menu {
         while(true){
         System.out.println("===OPÇÕES DE PEDIDO===");
         System.out.println("1- CARDAPIO DE PIZZAS");
-        System.out.println("2- CARDAPIO DE PIZZAS 2 SABORES");
+        System.out.println("2- CARDAPIO DE PIZZAS DOCES");
         System.out.println("3- REFRIGERANTES");
         System.out.println("X- SAIR DO MENU");
 
@@ -19,10 +19,10 @@ public class menu {
                     p1.sabores();
                 break;
             case 2:
-
+                      p1.PizzaDoce();
                 break;
             case 3:
-
+                     p1.Refrigerantes();
                 break;
         
             default:
