@@ -9,12 +9,14 @@ public class menu {
         System.out.println("3- REFRIGERANTES");
         System.out.println("X- SAIR DO MENU");
 
+              CardapioPizzas p1 = new CardapioPizzas();
+            
         Scanner entrada = new Scanner(System.in);
         int escolha = entrada.nextInt();
 
         switch (escolha) {
             case 1:
-                CardapioPizzas p1 = new CardapioPizzas();
+               // CardapioPizzas p1 = new CardapioPizzas();
                     p1.TAMANHOSpizzas();
                     p1.sabores();
                 break;
