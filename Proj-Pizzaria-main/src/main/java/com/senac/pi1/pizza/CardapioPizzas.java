@@ -37,17 +37,33 @@ public class CardapioPizzas {
         
     }
 
-    private static List<Pizza> TODAS_PIZZAS = List.of(
+    /*private static List<Pizza> TODAS_PIZZAS = List.of(
         new Pizza(1, "Mussarela", "média", 20, false),
         new Pizza(2, "Marguerita", "média", 30, false),
         new Pizza(3, "Napolitana", "pequena", 40, false),
         new Pizza(4, "4 queijos", "grande", 60, false),
         new Pizza(5, "brigadeiro", "grande", 60, true),
         new Pizza(6, "romeu e julieta", "grande", 60, true)
-    );
+    );*/
+
+    public static void cadastrarPizza() {
+        var pizzas = ArquivoPizza.lerPizzas();
+        System.out.println("Qual é o nome da pizza?");
+        var nome = LerDados.lerTexto();
+        System.out.println("Qual é o tamanho da pizza?");
+        var tamanho = LerDados.lerTexto();
+        System.out.println("Qual é o preço da pizza?");
+        var preco = LerDados.lerDouble("Digite um número! ");
+        System.out.println("É doce?");
+        var doce = LerDados.lerSimNao("Escolha sim ou não.");
+        var pizza = new Pizza(pizzas.size() + 1, nome, tamanho, preco, doce);
+        pizzas.add(pizza);
+        ArquivoPizza.salvarPizzas(pizzas);
+    }
 
    public static void saboresSalgados(){
-        for (Pizza p : TODAS_PIZZAS) {
+        var pizzas = ArquivoPizza.lerPizzas();
+        for (Pizza p : pizzas) {
             if (p.doce()) continue;
             System.out.println(p.numero() + " - " + p.nome() + " - " + p.tamanho() + " - R$ " + p.preco());
         }
@@ -68,7 +84,8 @@ public class CardapioPizzas {
     }
 
     public static void saboresDoces(){
-        for (Pizza p : TODAS_PIZZAS) {
+        var pizzas = ArquivoPizza.lerPizzas();
+        for (Pizza p : pizzas) {
             if (!p.doce()) continue;
             System.out.println(p.numero() + " - " + p.nome() + " - " + p.tamanho() + " - R$ " + p.preco());
         }
@@ -79,7 +96,27 @@ public class CardapioPizzas {
 
     }
 
-    public static void Refrigerantes(){
+    private static List<Refrigerantes> Bebidas = List.of(
+        new Refrigerantes( 1,  "COCA-COLA 2L", 10.00),
+        new Refrigerantes(2, "GUARANA 1,5L", 8.00),
+        new Refrigerantes(3, " FANTA LARANJA 2L", 10.00),
+        new Refrigerantes(4, "COCA-COLA LATA 350ML", 5.00),
+        new Refrigerantes(5, " GUARRANA LATA 350ML", 5.00),
+        new Refrigerantes(6, "SPLITE LATA 350ML", 5.00)
+    );
+
+    public static void Bebidas(){
+        for(Refrigerantes r : Bebidas){
+            System.out.println(r.num() + " - "+ r.tipo()+" - "+ r.preco()+"R$");
+        }
+        
+        
+        /*new Refrigerantes( 1,  "COCA-COLA 2L", 10.00);
+        new Refrigerantes(2, "GUARANA 1,5L", 8.00);
+        new Refrigerantes(3, " FANTA LARANJA 2L", 10.00);
+        new Refrigerantes(4, "COCA-COLA LATA 350ML", 5.00);
+        new Refrigerantes(5, " GUARRANA LATA 350ML", 5.00);
+        new Refrigerantes(6, "SPLITE LATA 350ML", 5.00);*/
         /*System.out.println("01- COCA-COLA 2L "+refriG+",00R$");
         System.out.println("02- GUARRANA 1,5L "+refriG+",00R$");
         System.out.println("03- FANTA LARANJA 2L "+refriG+",00R$");

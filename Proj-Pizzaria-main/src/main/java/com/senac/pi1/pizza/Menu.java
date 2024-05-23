@@ -20,12 +20,13 @@ public class Menu {
                     CardapioPizzas.saboresDoces();
                     break;
                 case "3":
-                    CardapioPizzas.Refrigerantes();
+                    CardapioPizzas.Bebidas();
                     break;
                 case "X":
                     return;
             
                 default:
+                System.out.println("OPÇÃO INVALIDA!!");
                     break;
             }
         }

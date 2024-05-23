@@ -8,8 +8,6 @@ import java.util.Optional;
 
 public class Pizzaria {
 
-    private static final List<Cliente> clientes = new ArrayList<>();
-
     public static void main(String[] args) {
         menuPrincipal();
     }
@@ -26,6 +24,8 @@ public class Pizzaria {
             System.out.println("E - Alterar preço");
             System.out.println("F - Controle de pedido");
             System.out.println("G - Listar clientes");//lista pronta
+            System.out.println("H - Procurar cliente por nome");
+            System.out.println("I - Procurar cliente por telefone");
             System.out.println("X - Sair");
             System.out.println();
             System.out.print("Digite a sua escolha: ");
@@ -35,19 +35,23 @@ public class Pizzaria {
             if (escolha.equals("A")) {
                 pedido();
             } else if (escolha.equals("B1")) {
-                listaPizzasSalgadas();
+                CardapioPizzas.saboresSalgados();
             } else if (escolha.equals("B2")) {
-                listaPizzasDoces();
+                CardapioPizzas.saboresDoces();
             } else if (escolha.equals("C")) {
-                MenuCliente.cadastrarCliente(clientes);
+                MenuCliente.cadastrarCliente();
             } else if (escolha.equals("D")) {
-                cadastrarPizza();
+                CardapioPizzas.cadastrarPizza();
             } else if (escolha.equals("E")) {
                 alteracaoPreço();
             } else if (escolha.equals("F")) {
-                controlePedido();
+                controlePedido();controlePedido();
             } else if (escolha.equals("G")) {
-                listarClientes();
+                MenuCliente.listarClientes();
+            } else if (escolha.equals("H")) {
+                MenuCliente.buscarClientesPorNome();
+            } else if (escolha.equals("I")) {
+                MenuCliente.buscarClientePorTelefone();
             } else if (escolha.equals("X")) {
                return;
             } else {
@@ -63,29 +67,8 @@ public class Pizzaria {
         Menu.pizzas();
            
     }
-    private static void listaPizzasSalgadas() {
-        CardapioPizzas.saboresSalgados();
-    }
-    
-    private static void listaPizzasDoces() {
-        CardapioPizzas.saboresDoces();
-    }
-        /*System.out.println("Escarola  (escarola refogada, mussarela e orégano)");
-        System.out.println("Mussarela  (mussarela, rodelas de tomate e orégano) ");
-        System.out.println("Marguerita  (mussarela, rodelas de tomate e manjericão) ");
-        System.out.println("Calabresa  (mussarela, linguiça calabresa e cebola)");*/
-
-    private static void cadastrarPizza() {    
-    }
     private static void alteracaoPreço() {    
     }
     private static void controlePedido() {   
-    }
-    private static void listarClientes() {
-        
-        
-        for (var c : clientes ) {
-            System.out.println(c);
-        }
     }
 }
