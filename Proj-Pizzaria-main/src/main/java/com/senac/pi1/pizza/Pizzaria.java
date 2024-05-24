@@ -21,7 +21,8 @@ public class Pizzaria {
             System.out.println("B2 - Lista de pizzas doces");//cardapio...
             System.out.println("C - Cadastrar cliente");//cadastro pronto
             System.out.println("D - Cadastrar pizza");
-            System.out.println("E - Alterar preço");
+            System.out.println("E - Lista de Refrigerantes ");
+            System.out.println("E2- Cadastrar Refrigerantes ");
             System.out.println("F - Controle de pedido");
             System.out.println("G - Listar clientes");//lista pronta
             System.out.println("H - Procurar cliente por nome");
@@ -33,7 +34,7 @@ public class Pizzaria {
             System.out.println();
 
             if (escolha.equals("A")) {
-                pedido();
+                Menu.fazerPedido();
             } else if (escolha.equals("B1")) {
                 CardapioPizzas.saboresSalgados();
             } else if (escolha.equals("B2")) {
@@ -43,8 +44,10 @@ public class Pizzaria {
             } else if (escolha.equals("D")) {
                 CardapioPizzas.cadastrarPizza();
             } else if (escolha.equals("E")) {
-                alteracaoPreço();
-            } else if (escolha.equals("F")) {
+                CardapioPizzas.bebidas();
+            } else if (escolha.equals("E2")) {
+                CardapioPizzas.cadastrarRefri();
+            }else if (escolha.equals("F")) {
                 controlePedido();controlePedido();
             } else if (escolha.equals("G")) {
                 MenuCliente.listarClientes();
@@ -60,15 +63,6 @@ public class Pizzaria {
         }
     }
 
-
-     private static void pedido() {   
-        System.out.println("Digite o telefone do cliente: ");
-        var telefone = LerDados.lerTexto();
-        Menu.pizzas();
-           
-    }
-    private static void alteracaoPreço() {    
-    }
     private static void controlePedido() {   
     }
 }
