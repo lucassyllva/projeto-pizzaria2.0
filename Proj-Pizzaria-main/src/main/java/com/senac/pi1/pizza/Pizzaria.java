@@ -48,7 +48,7 @@ public class Pizzaria {
             } else if (escolha.equals("E2")) {
                 CardapioPizzas.cadastrarRefri();
             }else if (escolha.equals("F")) {
-                controlePedido();controlePedido();
+                //Pedido.lerPedido();
             } else if (escolha.equals("G")) {
                 MenuCliente.listarClientes();
             } else if (escolha.equals("H")) {
@@ -63,6 +63,5 @@ public class Pizzaria {
         }
     }
 
-    private static void controlePedido() {   
-    }
+  
 }
