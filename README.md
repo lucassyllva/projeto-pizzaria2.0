@@ -10,7 +10,8 @@ https://drive.google.com/file/d/11xAqXIeU98FGyR61fTRVm9WG_VpSjBWh/view?usp=shari
 * Fazer pedido
 https://drive.google.com/file/d/1Ha9m_qNthMMGGrkMhh_JK_1oYIS74NoY/view?usp=sharing
 
-
+* Cadastrar pizzas
+  https://drive.google.com/file/d/1r1RfVuDtN2tREzqJABKkNNTMid6eAC-1/view?usp=sharing
 
 
 * Cadastra refrigerante
