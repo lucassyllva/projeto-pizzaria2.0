@@ -2,7 +2,7 @@
 
 Projeto de pizzaria do Lucas e do Guilherme Ferra.
 
-##fluxograma
+## Fluxograma
 https://app.diagrams.net/#G1Ha9m_qNthMMGGrkMhh_JK_1oYIS74NoY#%7B%22pageId%22%3A%22C5
 
 ## Funcionalidades
