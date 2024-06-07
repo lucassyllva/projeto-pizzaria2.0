@@ -13,10 +13,10 @@ https://drive.google.com/file/d/11xAqXIeU98FGyR61fTRVm9WG_VpSjBWh/view?usp=shari
 * Cadastra refrigerante
 https://drive.google.com/file/d/1L2FN7ApimlBEe-ggDC6-senjBgkq_qUT/view?usp=sharing
 
-* Listas de pizzas
+* Listar pizzas
 https://drive.google.com/file/d/1O7TAevRlVE_xrRZr5E3wEK1rH332FV-B/view?usp=sharing
 
-* Listar cliente
+* Listar clientes
 https://drive.google.com/file/d/1JfR1YPfDbxG7LkpEyo9YHmAJJcfcfSDS/view?usp=sharing
 
 * Fazer pedido
